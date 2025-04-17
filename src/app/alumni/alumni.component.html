@@ -1,1 +1,9 @@
-<p>alumni works!</p>
+<div class="container">
+    @for (person of Alumni; track $index) {
+            <div class="card" style="width:12rem;">
+                <img src="alumni_pictures/{{ person.photo }}" alt="HUMAN" class="card-img-top">
+                <p class="card-title">{{ person.name }}</p>
+                <p class="card-title">{{ person.age }}</p>
+            </div>
+            }
+    </div>
