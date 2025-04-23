@@ -1,1 +1,57 @@
-<p>Home works!</p>
+<div class="wrap">
+    <div>
+        <h1 class="text-center pt-2">Here is a selection of our most recent alumnis.</h1>
+        <h3 class="text-center">Click to read more about their stories or careers.</h3>
+    </div>
+
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
+        @for (person of Alumni; track $index) {
+            <div class="col">
+                <div class="border mx-auto m-5">
+                    <div class="person p-1">
+                        <img src="alumni_pictures/{{ person.photo }}" alt="HUMAN" class="card-img-top">
+                        <div class="text-start m-2">
+                            <p>{{ person.name }}</p>
+                            <p>{{ person.skill }}</p>
+                        </div>
+                        <button class="btn" routerLink="/alumni/{{person.id}}">Learn more</button>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<div class="midBar d-flex">
+    <div class="links">
+        <div class="btn formatDiv">Reunion Week</div> <div class="line">|</div>
+        <div class="btn formatDiv">Distinguished Alumni</div> <div class="line">|</div>
+        <div class="btn formatDiv">Carrer resources</div> <div class="line">|</div>
+        <div class="btn formatDiv">More events</div> 
+    </div>
+    <div class="socials"><a href=""></a>
+        <a href="https://en.wikipedia.org/wiki/Facebook"><img src="social_pictures/facebook-f-brands-solid.svg" alt="fb"></a>
+        <a href="https://en.wikipedia.org/wiki/GitHub"><img src="social_pictures/github-brands-solid.svg" alt="gh"></a>
+        <a href="https://en.wikipedia.org/wiki/LinkedIn"><img src="social_pictures/linkedin-brands-solid.svg" alt="li"></a>
+    </div>
+</div>
+
+<div class="endContainer">
+    <section class="article d-flex gap-5 p-5">
+
+        <div class="article1">
+            <img src="event_pictures/article1.jpg" alt="convention">
+            <h4>Convention 1</h4>
+        </div>
+
+        <div class="article2">
+            <img src="event_pictures/article2.jpg" alt="convention">
+        </div>
+
+    </section>
+
+    <section class="events">
+
+    </section>
+</div>
+
