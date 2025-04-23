@@ -3,10 +3,6 @@
     padding:0;
 }
 
-.wrap {
-    background-color: skyblue;
-}
-
 .border {
     border-radius: 5px;
     height:fit-content;
@@ -27,10 +23,8 @@
         }
         & .btn {
             align-self:center;
-            background-color: turquoise;
             height:fit-content;
             padding:2px;
-            box-shadow: 1px 0px 0px, 0px 1px 1px;
         }
 }
 
@@ -56,10 +50,9 @@
 /* MIDDLE BAR */
 
 .midBar {
-    background-color: lightgray;
     height:3.5rem;
     width:100%;
-    border:1px solid green;
+    
 }
 
 .links {
@@ -67,7 +60,7 @@
     justify-content: space-around;
     align-items: center;
     width:75%;
-    gap:3rem;
+    gap:1rem;
     font-size: 1.2rem;
 }
 
@@ -97,18 +90,26 @@
 /* END SECTION */
 
 .endContainer {
-    background-color: lightgoldenrodyellow;
+   
+    display:flex;
 
     & .article {
-        
+        box-sizing: border-box;
+       
     }
     & .article>.article1 {
+        
+        max-width:250px;        
+        border: 1px solid black;
+
         & img {
             height: 250px;
             width:250px;
         }
     }
     & .article>.article2 {
+        border: 1px solid black;
+        width:250px;
         & img {
             height:250px;
             width:250px;
@@ -118,6 +119,27 @@
 
 
     & .events {
-
+        align-self: center;
+    
+        & .event1 {
+            display:flex;
+            gap:2rem;
+            padding:2rem;
+        }
+        & .event2 {
+            display:flex;
+            gap:2rem;
+            padding:2rem;
+        }
+        & .event3 {
+            display:flex;
+            gap:2rem;
+            padding:2rem;
+        }
+        & .event4 {
+            display:flex;
+            gap:2rem;
+            padding:2rem;
+        }
     }
 }
