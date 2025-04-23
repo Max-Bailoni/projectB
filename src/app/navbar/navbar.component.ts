@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CareersComponent } from '../careers/careers.component';
 
 @Component({
   selector: 'app-navbar',
