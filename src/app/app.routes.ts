@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
 export const routes: Routes = [
 
     { path: "", component: HomeComponent },
-    { path: "alumni/:id", component: AlumniComponent }
+    { path: "alumni/:id", component: AlumniComponent },
+    { path: "careers", component: CareersComponent }
 
 ];
