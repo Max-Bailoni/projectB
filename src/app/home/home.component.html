@@ -9,10 +9,10 @@
             <div class="col">
                 <div class="border mx-auto m-5">
                     <div class="person p-1">
-                        <img src="alumni_pictures/{{ person.photo }}" alt="HUMAN" class="card-img-top">
+                        <img src="alumni_pictures/{{ person.photoUrl }}" alt="HUMAN" class="card-img-top">
                         <div class="text-start m-2">
                             <p>{{ person.name }}</p>
-                            <p>{{ person.skill }}</p>
+                            <p>{{ person.careerPath }}</p>
                         </div>
                         <button class="btn" routerLink="/alumni/{{person.id}}">Learn more</button>
                     </div>
@@ -20,9 +20,6 @@
             </div>
         }
     </div>
-
-
-<button class="btn career text-danger" routerLink="/careers">Go to Career site</button> 
 
 <div class="midBar d-flex">
     <div class="links">

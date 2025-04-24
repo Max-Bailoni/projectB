@@ -4,7 +4,7 @@
       @for (alumni of alumnis; track alumni.id) {
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card h-100 border border-1 border-light-subtle shadow-sm rounded-4">
-            <img [src]="alumni.photoUrl" class="card-img-top rounded-top-4" alt="{{ alumni.name }}">
+            <img src="alumni_pictures/{{ alumni.photoUrl }}" class="card-img-top rounded-top-4" alt="{{ alumni.name }}">
             <div class="card-body">
               <h5 class="card-title text-center fw-semibold mb-1">{{ alumni.name }}</h5>
               <p class="text-center text-muted small mb-2">{{ alumni.currentRole }}<br> {{ alumni.company }}</p>

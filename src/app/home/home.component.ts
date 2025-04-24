@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
-import { Ialumni } from '../alumni.interface';
-import { ALUMNIS } from '../alumni';
+import { Alumni } from '../alumni.interface';
+import { alumnis } from '../alumni';
 import { RouterLink } from '@angular/router';
 
 @Component({
@@ -10,5 +10,5 @@ import { RouterLink } from '@angular/router';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  Alumni: Ialumni[] = ALUMNIS;
+  Alumni: Alumni[] = alumnis;
 }
