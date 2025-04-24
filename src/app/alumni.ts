@@ -10,7 +10,7 @@ export let alumnis : Alumni[] = [
     currentRole: 'Frontend Developer',
     company: 'WebSolutions GmbH',
     careerPath: ['Junior Developer', 'Frontend Specialist', 'Team Lead'],
-    codeFactoryHighlights: ['Abschlussprojekt: Angular E-Commerce', 'Hackathon Gewinnerin'],
+    codeFactoryHighlights: ['Final project: Angular E-Commerce', 'Hackathon winner'],
     },
     {
         id: 2,
@@ -21,7 +21,7 @@ export let alumnis : Alumni[] = [
         currentRole: 'Full Stack Developer',
         company: 'DevWorks AG',
         careerPath: ['Intern', 'Junior Developer', 'Full Stack Developer'],
-        codeFactoryHighlights: ['Finalprojekt API-Entwicklung', 'Mentor für neue Kurse'],
+        codeFactoryHighlights: ['Final project API development', 'Mentor for new courses'],
       },
       {
         id: 3,
@@ -31,8 +31,8 @@ export let alumnis : Alumni[] = [
         graduationYear: 2023,
         currentRole: 'UX Designer',
         company: 'KreativStudio',
-        careerPath: ['Design Praktikum', 'UX Junior', 'UX Expertin'],
-        codeFactoryHighlights: ['Redesign interner Plattform', 'UX-Workshop geleitet']
+        careerPath: ['Design Internship', 'UX Junior', 'UX Expertin'],
+        codeFactoryHighlights: ['Redesign of internal platform', 'UX workshop led']
       },
       {
         id: 4,
@@ -65,7 +65,7 @@ export let alumnis : Alumni[] = [
         currentRole: 'Backend Developer',
         company: 'CloudNest',
         careerPath: ['DevOps Trainee', 'Backend Developer'],
-        codeFactoryHighlights: ['CI/CD Pipeline Projekt', 'Backend Architektur']
+        codeFactoryHighlights: ['CI/CD Pipeline Projekt', 'Backend Architecture']
       },
       {
         id: 7,
@@ -75,8 +75,8 @@ export let alumnis : Alumni[] = [
         graduationYear: 2023,
         currentRole: 'QA Engineer',
         company: 'Testify',
-        careerPath: ['Tester', 'Automatisierungs-Spezialistin'],
-        codeFactoryHighlights: ['Automatisierte Tests für LMS', 'Teststrategie-Workshop']
+        careerPath: ['Tester', 'Automation specialist'],
+        codeFactoryHighlights: ['Automated tests for LMS', 'Test strategy workshop']
       },
       {
         id: 8,
@@ -87,7 +87,7 @@ export let alumnis : Alumni[] = [
         currentRole: 'Software Consultant',
         company: 'BrightCode',
         careerPath: ['Junior Consultant', 'Angular Coach'],
-        codeFactoryHighlights: ['Blog über Angular geschrieben', 'Trainer für TypeScript']
+        codeFactoryHighlights: ['Blog written about Angular', 'Trainer for TypeScript']
       }
 
 ];
