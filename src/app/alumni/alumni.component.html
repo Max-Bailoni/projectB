@@ -1,0 +1,33 @@
+<div class="container">
+    <h1 class="text-center mb-5 mt-4 fw-bold display-6">Our Alumni</h1>
+    <div class="row g-4">
+      @for (alumni of alumnis; track alumni.id) {
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 border border-1 border-light-subtle shadow-sm rounded-4">
+            <img [src]="alumni.photoUrl" class="card-img-top rounded-top-4" alt="{{ alumni.name }}">
+            <div class="card-body">
+              <h5 class="card-title text-center fw-semibold mb-1">{{ alumni.name }}</h5>
+              <p class="text-center text-muted small mb-2">{{ alumni.currentRole }}<br> {{ alumni.company }}</p>
+              <p class="text-center small mb-2"><i class="bi bi-calendar-event"></i> {{ alumni.graduationYear }}</p>
+  
+              <hr class="my-2">
+  
+              <p class="fw-semibold small mb-1">Career Path</p>
+              <ul class="list-unstyled small text-muted mb-2">
+                @for (step of alumni.careerPath; track step) {
+                  <li>• {{ step }}</li>
+                }
+              </ul>
+  
+              <p class="fw-semibold small mb-1">CodeFactory Highlights</p>
+              <ul class="list-unstyled small text-muted">
+                @for (highlight of alumni.codeFactoryHighlights; track highlight) {
+                  <li>✔ {{ highlight }}</li>
+                }
+              </ul>
+            </div>
+          </div>
+        </div>
+      }
+    </div>
+  </div>
