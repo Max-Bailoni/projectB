@@ -1,7 +1,11 @@
-export interface Ialumni {
-    name:string,
-    photo:string,
-    age:number,
-    id:number,
-    skill:string
-}
+export interface Alumni {
+    id: number;
+    name: string;
+    age: number;
+    photoUrl: string;
+    graduationYear: number;
+    currentRole: string;
+    company: string;
+    careerPath: string[];
+    codeFactoryHighlights: string[];
+  }
