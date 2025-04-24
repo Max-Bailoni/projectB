@@ -1,0 +1,53 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    padding: 0 1rem;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  }
+  
+  .spacer {
+    flex: 1 1 auto;
+  }
+  
+  .nav-links a {
+    margin-left: 12px;
+  }
+  
+  .mobile-menu-button {
+    display: none;
+  }
+  
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1976d2;
+    padding: 1rem;
+  }
+  
+  .mobile-menu a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 0;
+  }
+  
+
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+  
+    .mobile-menu-button {
+      display: block;
+    }
+  
+    .mobile-menu {
+      display: flex;
+    }
+  }
