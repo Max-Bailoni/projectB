@@ -1,60 +1,93 @@
-import { Ialumni } from "./alumni.interface";
+import { Alumni } from "./alumni.interface";
 
-export let ALUMNIS:Ialumni[] = [
+export let alumnis : Alumni[] = [
     {
-        name: "Anna",
-        photo: "woman1.jpg",
-        age: 33,
-        id: 1,
-        skill: "Frontend Dev"
+    id: 1,
+    name: 'Anna Schmidt',
+    age: 33,
+    photoUrl: 'https://via.placeholder.com/150',
+    graduationYear: 2023,
+    currentRole: 'Frontend Developer',
+    company: 'WebSolutions GmbH',
+    careerPath: ['Junior Developer', 'Frontend Specialist', 'Team Lead'],
+    codeFactoryHighlights: ['Final project: Angular E-Commerce', 'Hackathon winner'],
     },
     {
-        name: "Bertha",
-        photo: "woman3.jpg",
-        age: 23,
         id: 2,
-        skill: "Backend Dev"
-    },
-    {
-        name: "Chris",
-        photo: "man3.jpg",
-        age: 21,
+        name: 'Lukas Steiner',
+        age: 23,
+        photoUrl: 'https://via.placeholder.com/150',
+        graduationYear: 2022,
+        currentRole: 'Full Stack Developer',
+        company: 'DevWorks AG',
+        careerPath: ['Intern', 'Junior Developer', 'Full Stack Developer'],
+        codeFactoryHighlights: ['Final project API development', 'Mentor for new courses'],
+      },
+      {
         id: 3,
-        skill: "Frontend Dev"
-    },
-    {
-        name: "David",
-        photo: "man4.jpg",
-        age: 51,
+        name: 'Sophie Berger',
+        age: 21,
+        photoUrl: 'https://via.placeholder.com/150',
+        graduationYear: 2023,
+        currentRole: 'UX Designer',
+        company: 'KreativStudio',
+        careerPath: ['Design Internship', 'UX Junior', 'UX Expertin'],
+        codeFactoryHighlights: ['Redesign of internal platform', 'UX workshop led']
+      },
+      {
         id: 4,
-        skill: "Backend Dev"
-    },
-    {
-        name: "Efgheni",
-        photo: "man5.jpg",
-        age: 40,
+        name: 'Jonas Winkler',
+        age: 38,
+        photoUrl: 'https://via.placeholder.com/150',
+        graduationYear: 2021,
+        currentRole: 'Data Engineer',
+        company: 'DataWave',
+        careerPath: ['Junior BI Analyst', 'Data Engineer'],
+        codeFactoryHighlights: ['Data Science Bootcamp', 'Big Data Projekt']
+      },
+      {
         id: 5,
-        skill: "Frontend Dev"
-    },
-    {
-        name: "Fritz",
-        photo: "man2.jpg",
+        name: 'Mia Köhler',
         age: 29,
+        photoUrl: 'https://via.placeholder.com/150',
+        graduationYear: 2022,
+        currentRole: 'App Developer',
+        company: 'MobileFirst GmbH',
+        careerPath: ['Android Dev', 'Cross-Platform Dev'],
+        codeFactoryHighlights: ['Mobile App Projekt', 'CodeFactory Ambassadorin']
+      },
+      {
         id: 6,
-        skill: "Backend Dev"
-    },
-    {
-        name: "Gitti",
-        photo: "woman2.jpg",
-        age: 18,
+        name: 'Felix Braun',
+        age: 30,
+        photoUrl: 'https://via.placeholder.com/150',
+        graduationYear: 2020,
+        currentRole: 'Backend Developer',
+        company: 'CloudNest',
+        careerPath: ['DevOps Trainee', 'Backend Developer'],
+        codeFactoryHighlights: ['CI/CD Pipeline Projekt', 'Backend Architecture']
+      },
+      {
         id: 7,
-        skill: "Frontend Dev"
-    },
-    {
-        name: "Hubert",
-        photo: "man1.jpg",
-        age: 37,
+        name: 'Lea Schwarz',
+        age: 27,
+        photoUrl: 'https://via.placeholder.com/150',
+        graduationYear: 2023,
+        currentRole: 'QA Engineer',
+        company: 'Testify',
+        careerPath: ['Tester', 'Automation specialist'],
+        codeFactoryHighlights: ['Automated tests for LMS', 'Test strategy workshop']
+      },
+      {
         id: 8,
-        skill: "Backend Dev"
-    },
-]
+        name: 'Tim Hoffmann',
+        age: 40,
+        photoUrl: 'https://via.placeholder.com/150',
+        graduationYear: 2021,
+        currentRole: 'Software Consultant',
+        company: 'BrightCode',
+        careerPath: ['Junior Consultant', 'Angular Coach'],
+        codeFactoryHighlights: ['Blog written about Angular', 'Trainer for TypeScript']
+      }
+
+];
