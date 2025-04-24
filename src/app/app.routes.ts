@@ -8,7 +8,7 @@ import { EventsComponent } from './events/events.component';
 export const routes: Routes = [
 
     { path: "", component: HomeComponent },
-    { path: "alumni/:id", component: AlumniComponent },
+    { path: "alumni", component: AlumniComponent },
     { path: "stories", component: StoriesComponent },
     { path: "careers", component: CareersComponent },
     { path: "events", component: EventsComponent },
