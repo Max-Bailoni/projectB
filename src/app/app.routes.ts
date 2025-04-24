@@ -1,14 +1,15 @@
 import { Routes } from '@angular/router';
-import { AlumniComponent } from './alumni/alumni.component';
-import { CareersComponent } from './careers/careers.component';
 import { HomeComponent } from './home/home.component';
-import { Component } from '@angular/core';
-import { FooterComponent } from './footer/footer.component';
+import { AlumniComponent } from './alumni/alumni.component';
+import { StoriesComponent } from './stories/stories.component';
+import { CareersComponent } from './careers/careers.component';
+import { EventsComponent } from './events/events.component';
 
 export const routes: Routes = [
 
     { path: "", component: HomeComponent },
     { path: "alumni/:id", component: AlumniComponent },
+    { path: "stories", component: StoriesComponent },
     { path: "careers", component: CareersComponent },
-    {path: "footer", component: FooterComponent},
+    { path: "events", component: EventsComponent },
 ];
