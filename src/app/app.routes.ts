@@ -1,8 +1,7 @@
 import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
-import { Component } from '@angular/core';
 import { AlumniComponent } from './alumni/alumni.component';
-import { EventsComponent } from './events/events.component';
+import { StoriesComponent } from './stories/stories.component';
 import { CareersComponent } from './careers/careers.component';
 import { StoriesComponent } from './stories/stories.component';
 
@@ -28,4 +27,5 @@ export const routes: Routes = [
         component: StoriesComponent
     }
 ];
+
 

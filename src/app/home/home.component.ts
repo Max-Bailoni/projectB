@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { RouterLink } from '@angular/router';
 import { Alumni } from '../alumni.interface';
 import { alumnis } from '../alumni';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-home',
