@@ -4,6 +4,7 @@ import { Component } from '@angular/core';
 import { AlumniComponent } from './alumni/alumni.component';
 import { EventsComponent } from './events/events.component';
 import { CareersComponent } from './careers/careers.component';
+import { StoriesComponent } from './stories/stories.component';
 
 export const routes: Routes = [
     {
@@ -22,4 +23,9 @@ export const routes: Routes = [
         path: 'careers',
         component: CareersComponent
     },
+    {
+        path: 'stories',
+        component: StoriesComponent
+    }
 ];
+
