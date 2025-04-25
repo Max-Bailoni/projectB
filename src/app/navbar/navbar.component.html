@@ -1,30 +1,30 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <img src="https://www.codefactory.wien/logo/cf-logo.png" alt="">
-        <div class="container-fluid">
-          <a class="navbar-brand" routerLink="/" >CodeFactory Alumni</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" routerLink ="/alumni">Alumni</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink ="/stories">Stories</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink ="/careers">Careers</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink ="/events">Events</a>
-              </li>
-              
-                </ul>
-                
-          </div>
-        </div>
-      </nav>
+<nav class="navbar navbar-expand-lg shadow-sm bg-light">
+  <div class="container-fluid px-4">
+    <a class="navbar-brand d-flex align-items-center fw-semibold fs-4" routerLink="/">
+      <img src="" width="130" class="me-2" alt="CodeFactory Logo">
+      <span class="brand-text">CodeFactory Alumni</span>
+    </a>
 
-    
-    
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav mb-2 mb-lg-0 gap-lg-4">
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" routerLink="/alumni" routerLinkActive="active">Alumni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" routerLink="/stories" routerLinkActive="active">Stories</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" routerLink="/careers" routerLinkActive="active">Careers</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link nav-link-custom" routerLink="/events" routerLinkActive="active">Events</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>

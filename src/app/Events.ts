@@ -49,4 +49,4 @@ export let events: EventModel[] = [
         location: 'Design Studio, Graz',
         description: 'Learn more about the latest UX/UI design trends and how they influence web development.'
       }
-]
+    ]

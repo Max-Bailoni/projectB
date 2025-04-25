@@ -1,0 +1,29 @@
+:host {
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .event-card {
+    border: 1px solid #dee2e6;
+    transition: all 0.3s ease;
+    background-color: #fff;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.07);
+    border-color: #0d6efd;
+  }
+  
+  .event-card .badge {
+    font-size: 0.75rem;
+    border-radius: 2rem;
+  }
+  
+  .event-card a {
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .event-card a:hover {
+    color: #0d6efd;
+  }

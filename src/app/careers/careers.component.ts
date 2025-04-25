@@ -1,17 +1,16 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { RouterLink } from '@angular/router';
 import { CommonModule } from '@angular/common';
-import { JobService } from '../services/job.service';
 import { Job } from './job.interface';
+import { JobService } from '../../job.service';
 
 @Component({
   selector: 'app-careers',
-  standalone: true,
   imports: [CommonModule],
   templateUrl: './careers.component.html',
-  styleUrl: './careers.component.css',
-  
+  styleUrls: ['./careers.component.css']
 })
-export class CareersComponent {
+export class CareersComponent implements OnInit {
   jobOffers: Job[] = [];
   interestedCompanies: string[] = [
     'TechNova Inc.',
@@ -23,7 +22,7 @@ export class CareersComponent {
 
   constructor(private jobService: JobService) {}
 
-  ngOnInit() {
+  ngOnInit(): void {
     this.jobOffers = this.jobService.getJobs();
   }
 }
