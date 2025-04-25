@@ -3,7 +3,7 @@ import { HomeComponent } from './home/home.component';
 import { AlumniComponent } from './alumni/alumni.component';
 import { StoriesComponent } from './stories/stories.component';
 import { CareersComponent } from './careers/careers.component';
-import { StoriesComponent } from './stories/stories.component';
+import { EventsComponent } from './events/events.component';
 
 export const routes: Routes = [
     {

@@ -7,23 +7,15 @@
 img {
     height:300px;
     width: 250px;
+    margin: auto;
 }
 
 .container {
-    margin-top: 25vh;
+    margin-top: 5vh;
 }
 
 .init {
     width:25%
-}
-
-.more {
-    border: 1px solid red;
-    width:75%;
-    & p {
-        width:75%;
-        border:1px dotted blue;
-    }
 }
 
 button {

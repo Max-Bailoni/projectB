@@ -5,10 +5,10 @@
   </div>
 
   <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 px-4">
-    @for (alumni of alumnis; track alumni.id) {
+    @for (alumni of alumnis; track $index) {
       <div class="col">
         <div class="alumni-card my-4 mx-auto">
-          <img src="imgs/{{ alumni.photoUrl }}" alt="alumni" class="img-fluid rounded-top">
+          <img src="alumni_pictures/{{ alumni.photoUrl }}" alt="alumni" class="img-fluid rounded-top">
           <div class="p-3">
             <p class="mb-1 fw-semibold">{{ alumni.name }}</p>
             <p class="mb-2 text-muted">{{ alumni.currentRole }}</p>
@@ -18,39 +18,11 @@
       </div>
     }
   </div>
-  <div class="text-center mt-5">
+  <div class="text-center mt-5 mb-5">
     <a class="btn btn-outline-accent fw-semibold btn-lg custom-btn" routerLink="/careers">Go to Career site <span class="mx-1"><i class="bi bi-arrow-right"></i></span></a>
   </div>
   
-<div class="mid-bar d-flex justify-content-between align-items-center flex-wrap mt-5 px-4 py-3 border-top border-bottom">
-    <div class="d-flex flex-wrap gap-3 align-items-center">
-      <span class="mid-link">Reunion Week</span> |
-      <span class="mid-link">Distinguished Alumni</span> |
-      <span class="mid-link">Career Resources</span> |
-      <span class="mid-link">More events</span>
-    </div>
-    <div class="d-flex gap-3">
-      <a href="https://en.wikipedia.org/wiki/Facebook"><img src="imgs/facebook-f-brands-solid.svg" alt="fb" width="24"></a>
-      <a href="https://en.wikipedia.org/wiki/GitHub"><img src="imgs/github-brands-solid.svg" alt="gh" width="24"></a>
-      <a href="https://en.wikipedia.org/wiki/LinkedIn"><img src="imgs/linkedin-brands-solid.svg" alt="li" width="24"></a>
 
-
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4">
-        @for (person of alumnis; track $index) {
-            <div class="col">
-                <div class="border mx-auto m-5">
-                    <div class="person p-1">
-                        <img src="alumni_pictures/{{ person.photoUrl }}" alt="HUMAN" class="card-img-top">
-                        <div class="text-start m-2">
-                            <p>{{ person.name }}</p>
-                            <p>{{ person.careerPath }}</p>
-                        </div>
-                        
-                    </div>
-                </div>
-            </div>
-        }
-    </div>
 
 <div class="midBar d-flex">
     <div class="links">
@@ -59,7 +31,7 @@
         <div class="btn formatDiv">Carrer resources</div> <div class="line">|</div>
         <div class="btn formatDiv">More events</div> 
     </div>
-    <div class="socials"><a href=""></a>
+    <div class="socials">
         <a href="https://en.wikipedia.org/wiki/Facebook"><img src="social_pictures/facebook-f-brands-solid.svg" alt="fb"></a>
         <a href="https://en.wikipedia.org/wiki/GitHub"><img src="social_pictures/github-brands-solid.svg" alt="gh"></a>
         <a href="https://en.wikipedia.org/wiki/LinkedIn"><img src="social_pictures/linkedin-brands-solid.svg" alt="li"></a>
@@ -67,7 +39,7 @@
 </div>
 
 <div class="endContainer">
-    <section class="article d-flex gap-5 p-5">
+    <section class="article gap-5 p-5 d-flex">
 
         <div class="article1">            
                 <img src="event_pictures/article1.jpg" alt="convention">
@@ -78,7 +50,7 @@
         </div>
 
     <div class="article1">            
-            <img src="imgs/article1.jpg" alt="convention">
+            <img src="event_pictures/article2.jpg" alt="convention">
             <h6 class="text-muted">Convention 1</h6>
             <h4>TechFront Global</h4>
             <p>This convention is about AI.</p>
@@ -88,7 +60,7 @@
 
 
     <div class="article2">
-        <img src="imgs/article2.jpg" alt="convention">
+        <img src="event_pictures/article1.jpg" alt="convention">
         <h6 class="text-muted">Convention 2</h6>
         <h4>CodeSphere International</h4>
         <p>This convention is about UX.</p>
@@ -97,7 +69,7 @@
     </div>
 
     <div class="article2">
-        <img src="imgs/article1.jpg" alt="convention">
+        <img src="event_pictures/article2.jpg" alt="convention">
         <h6 class="text-muted">Convention 3</h6>
         <h4>NexusTech World Summit</h4>
         <p>This convention is about UX.</p>
@@ -106,7 +78,7 @@
     </div>
 
     <div class="article2">
-        <img src="imgs/article2.jpg" alt="convention">
+        <img src="event_pictures/article1.jpg" alt="convention">
         <h6 class="text-muted">Convention 4</h6>
         <h4>Synapse 'verse</h4>
         <p>This convention is about UX.</p>
@@ -120,7 +92,7 @@
 <section class="events mx-2 p-1">
 
   <ul class="list-group list-group-flush">
-    @for (event of events | slice:0:3; track event.id) {
+    @for (event of events ; track event.id) {
       <li class="list-group-item">
         <div class="d-flex justify-content-between align-items-center">
           <div>
@@ -130,7 +102,7 @@
               <i class="bi bi-geo-alt-fill me-1"></i>{{ event.location }} • 
               <span class="text-uppercase badge bg-primary ms-1">{{ event.type }}</span>
             </p>
-            <small class="text-muted">{{ event.date | date: 'mediumDate' }}</small>
+            <small class="text-muted">{{ event.date  }}</small>
           </div>
           <div class="text-end mt-5">
     
@@ -142,6 +114,3 @@
 
 
     </section>
-</div>
-
-

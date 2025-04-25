@@ -11,7 +11,7 @@
     margin-inline: auto;
 }
 
-.person {
+.alumni_card {
     display: flex;
     flex-direction: column;
         & img {
@@ -95,7 +95,7 @@
 
     & .article {
         box-sizing: border-box;
-       
+        
     }
     & .article>.article1 {
         

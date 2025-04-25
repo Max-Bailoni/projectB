@@ -2,6 +2,8 @@ import { Component } from '@angular/core';
 import { Alumni } from '../alumni.interface';
 import { alumnis } from '../alumni';
 import { RouterLink } from '@angular/router';
+import { EventModel } from '../events.interface';
+import { events } from '../Events';
 
 @Component({
   selector: 'app-home',
@@ -11,5 +13,5 @@ import { RouterLink } from '@angular/router';
 })
 export class HomeComponent {
   alumnis: Alumni[] = alumnis;
-
+  events: EventModel[] = events;
 }

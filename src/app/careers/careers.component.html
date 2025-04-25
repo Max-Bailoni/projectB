@@ -5,7 +5,7 @@
     @for (job of jobOffers; track $index) {
     <div class="col-md-4 mb-4">
       <div class="card h-100 shadow-sm">
-        <img [src]="job.image" class="card-img-top" [alt]="job.company" />
+        <img src="/public/company_pictures/{{ job.image }}" class="card-img-top" [alt]="job.company" />
         <div class="card-body">
           <h5 class="card-title">{{ job.title }}</h5>
           <h6 class="card-subtitle mb-2 text-muted">{{ job.company }}</h6>
