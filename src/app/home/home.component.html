@@ -1,5 +1,5 @@
 <div class="text-center py-4">
-    <h1 class="fw-semibold fs-3">Here is a selection of our most recent alumni.</h1>
+    <h1 class="fw-bold fs-3">Here is a selection of our most recent alumni.</h1>
     <h3 class="fw-light fs-5 text-muted">Click to read more about their stories or careers.</h3>
   </div>
 
@@ -7,19 +7,19 @@
     @for (alumni of alumnis; track alumni.id) {
       <div class="col">
         <div class="alumni-card my-4 mx-auto">
-          <img src="alumni_pictures/{{ alumni.photoUrl }}" alt="alumni" class="img-fluid rounded-top">
+          <img src="imgs/{{ alumni.photoUrl }}" alt="alumni" class="img-fluid rounded-top">
           <div class="p-3">
             <p class="mb-1 fw-semibold">{{ alumni.name }}</p>
             <p class="mb-2 text-muted">{{ alumni.currentRole }}</p>
-            <a class="btn btn-accent w-100" routerLink="/alumni/{{alumni.id}}">Learn more</a>
+            <a class="btn btn-accent btn-sm yellow-border-link" routerLink="/alumni">Learn more</a>
           </div>
         </div>
       </div>
     }
   </div>
-<div class="text-center mt-5">
-    <a class="btn btn-outline-accent" routerLink="/careers">Go to Career site</a>
-</div>
+  <div class="text-center mt-5">
+    <a class="btn btn-outline-accent fw-semibold btn-lg custom-btn" routerLink="/careers">Go to Career site <span class="mx-1"><i class="bi bi-arrow-right"></i></span></a>
+  </div>
   
 <div class="mid-bar d-flex justify-content-between align-items-center flex-wrap mt-5 px-4 py-3 border-top border-bottom">
     <div class="d-flex flex-wrap gap-3 align-items-center">
@@ -29,9 +29,9 @@
       <span class="mid-link">More events</span>
     </div>
     <div class="d-flex gap-3">
-      <a href="https://en.wikipedia.org/wiki/Facebook"><img src="social_pictures/facebook-f-brands-solid.svg" alt="fb" width="24"></a>
-      <a href="https://en.wikipedia.org/wiki/GitHub"><img src="social_pictures/github-brands-solid.svg" alt="gh" width="24"></a>
-      <a href="https://en.wikipedia.org/wiki/LinkedIn"><img src="social_pictures/linkedin-brands-solid.svg" alt="li" width="24"></a>
+      <a href="https://en.wikipedia.org/wiki/Facebook"><img src="imgs/facebook-f-brands-solid.svg" alt="fb" width="24"></a>
+      <a href="https://en.wikipedia.org/wiki/GitHub"><img src="imgs/github-brands-solid.svg" alt="gh" width="24"></a>
+      <a href="https://en.wikipedia.org/wiki/LinkedIn"><img src="imgs/linkedin-brands-solid.svg" alt="li" width="24"></a>
     </div>
   </div>
 
@@ -41,32 +41,36 @@
 <section class="article d-flex gap-5 p-5">
 
     <div class="article1">            
-            <img src="event_pictures/article1.jpg" alt="convention">
-            <h4>Convention 1</h4>
+            <img src="imgs/article1.jpg" alt="convention">
+            <h6 class="text-muted">Convention 1</h6>
+            <h4>TechFront Global</h4>
             <p>This convention is about AI.</p>
             <p>People from all over the world are invited.</p>
             <p>Date: 1.1.2026</p>           
     </div>
 
     <div class="article2">
-        <img src="event_pictures/article2.jpg" alt="convention">
-        <h4>Convention 2</h4>
+        <img src="imgs/article2.jpg" alt="convention">
+        <h6 class="text-muted">Convention 2</h6>
+        <h4>CodeSphere International</h4>
         <p>This convention is about UX.</p>
         <p>People from all over the world are invited.</p>
         <p>Date: 1.2.2026</p>
     </div>
 
     <div class="article2">
-        <img src="event_pictures/article2.jpg" alt="convention">
-        <h4>Convention 2</h4>
+        <img src="imgs/article1.jpg" alt="convention">
+        <h6 class="text-muted">Convention 3</h6>
+        <h4>NexusTech World Summit</h4>
         <p>This convention is about UX.</p>
         <p>People from all over the world are invited.</p>
         <p>Date: 1.2.2026</p>
     </div>
 
     <div class="article2">
-        <img src="event_pictures/article2.jpg" alt="convention">
-        <h4>Convention 2</h4>
+        <img src="imgs/article2.jpg" alt="convention">
+        <h6 class="text-muted">Convention 4</h6>
+        <h4>Synapse 'verse</h4>
         <p>This convention is about UX.</p>
         <p>People from all over the world are invited.</p>
         <p>Date: 1.2.2026</p>
@@ -74,26 +78,31 @@
 
 </section>
 
-<section class="events">
+<section class="events mx-2 p-1">
 
-    <div class="event1">
-        <p class="date">10.10.2026</p>
-        <a href="">This is very interesting.</a>
-    </div>
-
-    <div class="event2">
-        <p class="date">11.11.2026</p>
-        <a href="">This is very interesting.</a>
-    </div>
-    <div class="event3">
-        <p class="date">12.12.2026</p>
-        <a href="">This is very interesting.</a>
-    </div>
-    <div class="event4">
-        <p class="date">01.01.2027</p>
-        <a href="">This is very interesting.</a>
-    </div>
+  <ul class="list-group list-group-flush">
+    @for (event of events | slice:0:3; track event.id) {
+      <li class="list-group-item">
+        <div class="d-flex justify-content-between align-items-center">
+          <div>
+            <a class="eventLink mb-1 fw-semibold" routerLink="/events">{{ event.title }}</a>
+            <hr>
+            <p class="mb-1 text-muted small">
+              <i class="bi bi-geo-alt-fill me-1"></i>{{ event.location }} • 
+              <span class="text-uppercase badge bg-primary ms-1">{{ event.type }}</span>
+            </p>
+            <small class="text-muted">{{ event.date | date: 'mediumDate' }}</small>
+          </div>
+          <div class="text-end mt-5">
+    
+</div>
+        </div>
+      </li>
+    }
+  </ul>
 
 </section>
 </div>
+
+
 
