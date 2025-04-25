@@ -4,9 +4,9 @@
     <h3 class="fw-light fs-5 text-muted">Click to read more about their stories or careers.</h3>
   </div>
 
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 px-4">
+  <div class="gap-4 row row-cols-1 row-cols-sm-2 row-cols-lg-4 px-4">
     @for (alumni of alumnis; track $index) {
-      <div class="col">
+      <div class="col mx-auto">
         <div class="alumni-card my-4 mx-auto">
           <img src="alumni_pictures/{{ alumni.photoUrl }}" alt="alumni" class="img-fluid rounded-top">
           <div class="p-3">
@@ -41,56 +41,56 @@
 <div class="endContainer">
     <section class="article gap-5 p-5 d-flex">
 
-        <div class="article1">            
-                <img src="event_pictures/article1.jpg" alt="convention">
-                <h4>Convention 1</h4>
-                <p>This convention is about AI.</p>
-                <p>People from all over the world are invited.</p>
-                <p>Date: 1.1.2026</p>           
-        </div>
+      <div class="article1">            
+              <img src="event_pictures/article1.jpg" alt="convention">
+              <h4>Convention 1</h4>
+              <p>This convention is about AI.</p>
+              <p>People from all over the world are invited.</p>
+              <p>Date: 1.1.2026</p>           
+      </div>
 
-    <div class="article1">            
+      <div class="article1">            
             <img src="event_pictures/article2.jpg" alt="convention">
             <h6 class="text-muted">Convention 1</h6>
             <h4>TechFront Global</h4>
             <p>This convention is about AI.</p>
             <p>People from all over the world are invited.</p>
             <p>Date: 1.2.2026</p>
-        </div>
+      </div>
 
 
-    <div class="article2">
+      <div class="article2">
         <img src="event_pictures/article1.jpg" alt="convention">
         <h6 class="text-muted">Convention 2</h6>
         <h4>CodeSphere International</h4>
         <p>This convention is about UX.</p>
         <p>People from all over the world are invited.</p>
         <p>Date: 1.2.2026</p>
-    </div>
+      </div>
 
-    <div class="article2">
+      <div class="article2">
         <img src="event_pictures/article2.jpg" alt="convention">
         <h6 class="text-muted">Convention 3</h6>
         <h4>NexusTech World Summit</h4>
         <p>This convention is about UX.</p>
         <p>People from all over the world are invited.</p>
         <p>Date: 1.2.2026</p>
-    </div>
+      </div>
 
-    <div class="article2">
+      <div class="article2">
         <img src="event_pictures/article1.jpg" alt="convention">
         <h6 class="text-muted">Convention 4</h6>
         <h4>Synapse 'verse</h4>
         <p>This convention is about UX.</p>
         <p>People from all over the world are invited.</p>
         <p>Date: 1.2.2026</p>
-    </div>
-
+      </div>
+  </section>
+</div>
 
 
 
 <section class="events mx-2 p-1">
-
   <ul class="list-group list-group-flush">
     @for (event of events ; track event.id) {
       <li class="list-group-item">
@@ -104,13 +104,9 @@
             </p>
             <small class="text-muted">{{ event.date  }}</small>
           </div>
-          <div class="text-end mt-5">
-    
-</div>
+          
         </div>
       </li>
     }
   </ul>
-
-
-    </section>
+</section>

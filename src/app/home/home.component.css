@@ -115,31 +115,9 @@
             width:250px;
         }
     }
-
-
-
-    & .events {
-        align-self: center;
-    
-        & .event1 {
-            display:flex;
-            gap:2rem;
-            padding:2rem;
-        }
-        & .event2 {
-            display:flex;
-            gap:2rem;
-            padding:2rem;
-        }
-        & .event3 {
-            display:flex;
-            gap:2rem;
-            padding:2rem;
-        }
-        & .event4 {
-            display:flex;
-            gap:2rem;
-            padding:2rem;
-        }
-    }
 }
+
+.events {
+        display:flex;
+        flex-direction: row;
+    }
