@@ -274,7 +274,7 @@ body {
   
   .socials img:hover {
     filter: grayscale(0%);
-  }
-    color: #00aa88;
+  
+    color:#00aa88;
     border-color: #00aa88;
 }
