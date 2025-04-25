@@ -1,0 +1,31 @@
+<div class="container">
+    <h2 class="mb-4">Job Opportunities for Alumni</h2>
+  
+    <div class="row">
+      @for (job of jobOffers; track $index) {
+      <div class="col-md-4 mb-4">
+        <div class="card h-100 shadow-sm">
+          <img [src]="job.image" class="card-img-top" [alt]="job.company" />
+          <div class="card-body">
+            <h5 class="card-title">{{ job.title }}</h5>
+            <h6 class="card-subtitle mb-2 text-muted">{{ job.company }}</h6>
+            <p class="card-text">{{ job.description }}</p>
+            <p class="card-text">
+              <small class="text-muted">Location: {{ job.location }}</small>
+            </p>
+          </div>
+        </div>
+      </div>
+      }
+    </div>
+  
+    <hr class="my-5" />
+  
+    <h3 class="mb-3">Companies Interested in Our Alumni</h3>
+    <ul class="list-group">
+      @for (company of interestedCompanies; track $index) {
+      <li class="list-group-item">{{ company }}</li>
+      }
+    </ul>
+  </div>
+  
