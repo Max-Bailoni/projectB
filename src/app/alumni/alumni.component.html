@@ -1,10 +1,23 @@
 <div class="container">
-    <h1 class="text-center mb-5 mt-4 fw-bold display-6">Our Alumni</h1>
-    <div class="row g-4">
+    <h1 class="text-start mb-5 mt-4 fw-bold display-6">Our Alumni</h1>
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <p class="fw-light mb-4">
+          Code Factory has successfully trained hundreds of alumni who have gone on to achieve remarkable success in the tech industry. Our graduates are equipped with cutting-edge skills and a strong network that enhances their career prospects. With a focus on real-world applications and continuous learning, Code Factory alumni are consistently landing jobs with top companies worldwide. The success rate of our graduates speaks for itself, as they continue to thrive in their careers and contribute to the ever-growing tech ecosystem.
+        </p>
+
+      </div>
+
+    </div>
+    <br>
+    <div class="row g-4 mb-5">
       @for (alumni of alumnis; track alumni.id) {
         <div class="col-12 col-sm-6 col-md-4 col-lg-3">
           <div class="card h-100 border border-1 border-light-subtle shadow-sm rounded-4">
-            <img src="alumni_pictures/{{ alumni.photoUrl }}" class="card-img-top rounded-top-4" alt="{{ alumni.name }}">
+
+            <img src="imgs/{{ alumni.photoUrl }}" class="card-img-top rounded-top-4" alt="{{ alumni.name }}">
+
+
             <div class="card-body">
               <h5 class="card-title text-center fw-semibold mb-1">{{ alumni.name }}</h5>
               <p class="text-center text-muted small mb-2">{{ alumni.currentRole }}<br> {{ alumni.company }}</p>
