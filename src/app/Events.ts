@@ -19,7 +19,7 @@ export let events: EventModel[] = [
       },
       {
         id: 3,
-        title: 'Job Fair: Entwickler und IT-Experten gesucht!',
+        title: 'Job Fair: Developers and IT experts wanted!',
         type: 'Job Fair',
         date: '2025-07-01T10:00:00',
         location: 'Vienna Messe',
